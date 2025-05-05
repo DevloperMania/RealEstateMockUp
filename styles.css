@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.hero {
+  padding: 2rem;
+  background-color: #e6f0ff;
+  text-align: center;
+}
+.hero input {
+  padding: 0.5rem;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+}
+section {
+  padding: 2rem;
+}
+.property-grid {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.property-card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.property-card img {
+  width: 100%;
+  height: auto;
+}
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background-color: #004080;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #004080;
+  color: white;
+}
+@media (max-width: 768px) {
+  .property-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    display: inline-block;
+    margin: 0.5rem 0;
+  }
+}
