@@ -5,17 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lodha LLP - Real Estate</title>
   <link rel="stylesheet" href="styles.css" />
+ 
 </head>
 <body>
   <header>
     <div class="logo">Lodha LLP</div>
-    <nav>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <div class="nav-toggle">
+     <li>
       <a href="#home">Home</a>
-      <a href="#properties">Properties</a>
-      <a href="#contractors">Contractors</a>
-      <a href="#contact">Contact</a>
-      <a href="login.html">Login</a>
-      <a href="signup.html">Sign Up</a>
+     </li> 
+      <li><a href="#properties">Properties</a>
+      </li>
+      <li>
+        <a href="#contractors">Contractors</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+      <li>
+        <a href="login.html">Login</a>
+      </li>
+      <li>
+        <a href="signup.html">Sign Up</a>
+      </li>
+    </div>
+    </ul>
+    <button  id="hamburger-toggle"  class="hamburger">
+      <svg  xmlns="http://www.w3.org/2000/svg"  width="50"  height="70"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 6l16 0" /><path d="M4 12l16 0" /><path d="M4 18l16 0" /></svg>
+    </button>
     </nav>
   </header>
 
@@ -28,38 +47,75 @@
     <h2>Featured Properties</h2>
     <div class="property-grid">
       <div class="property-card">
-        <img src="https://via.placeholder.com/300x200" alt="Flat 1" />
+        <img src="image4.jpg" alt="Flat 1" />
         <h3>Luxury Apartment</h3>
         <p>Location: Mumbai</p>
         <p>Price: ₹1.2 Cr</p>
       </div>
       <div class="property-card">
-        <img src="https://via.placeholder.com/300x200" alt="Flat 2" />
+        <img src="image2.jpg" alt="Flat 2" />
         <h3>2BHK in Pune</h3>
         <p>Location: Pune</p>
         <p>Price: ₹80 Lakh</p>
       </div>
       <div class="property-card">
-        <img src="https://via.placeholder.com/300x200" alt="Flat 3" />
+        <img src="image1.jpg" alt="Flat 3" />
         <h3>Villa in Bangalore</h3>
         <p>Location: Bangalore</p>
         <p>Price: ₹2.5 Cr</p>
       </div>
+      <div class="property-card">
+        <img src="image5.jpg" alt="Flat 4" />
+        <h3>Villa in Bangalore</h3>
+        <p>Location: Bangalore</p>
+        <p>Price: ₹2.5 Cr</p>
+      </div>
+      
     </div>
+    
   </section>
 
   <section id="contractors">
     <h2>Top Construction Contractors</h2>
-    <ul>
-      <li><strong>BuildRight Ltd.</strong> - Civil and Commercial Projects</li>
+   <!---- <ul>
+     -- <li><strong>BuildRight Ltd.</strong> - Civil and Commercial Projects</li>
       <li><strong>UrbanBase</strong> - Modern housing and interiors</li>
       <li><strong>Skyline Builders</strong> - Residential and township experts</li>
-    </ul>
+    </ul>-->
+    <div class="property-grid">
+      <div class="property-card">
+        <img src="cons1.jpg" alt="Flat 1" />
+        <h3>Luxury Apartment</h3>
+        <p>Location: Mumbai</p>
+      <!--- <p>Price: ₹1.2 Cr</p>-->
+      </div>
+      <div class="property-card">
+        <img src="cons2.jpg" alt="Flat 2" />
+        <h3>L&T in Pune</h3>
+        <p>Location: Pune</p>
+        <!--<p>Price: ₹80 Lakh</p>-->
+      </div>
+      <div class="property-card">
+        <img src="cons3.jpg" alt="Flat 3" />
+        <h3>Raymond Reality in Bangalore</h3>
+        <p>Location: Bangalore</p>
+       <!---- <p>Price: ₹2.5 Cr</p>-->
+      </div>
+      <div class="property-card">
+        <img src="cons.jpg" alt="Flat 4" />
+        <h3>Raymond Reality in Bangalore</h3>
+        <p>Location: Bangalore</p>
+       <!---- <p>Price: ₹2.5 Cr</p>-->
+      </div>
+      
+    </div>
+
+
   </section>
 
-  <section id="contact">
+  <section id="contact" class ="property-grid">
     <h2>Contact Us</h2>
-    <form>
+     <form>
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message"></textarea>
@@ -70,5 +126,6 @@
   <footer>
     <p>&copy; 2025 Lodha LLP. All rights reserved.</p>
   </footer>
+  <script src="/nav.js"></script>
 </body>
 </html>
